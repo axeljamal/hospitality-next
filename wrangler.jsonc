@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers static assets: serves the `next build` output in out/. No Worker script needed.
+  // Deploy (not done yet): npm run build && npx wrangler deploy
+  "name": "hospitality-next",
+  "routes": [{ "pattern": "hospitality-next.marea-dvipa.uk", "custom_domain": true }],
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "out",
+    "not_found_handling": "404-page"
+  }
+}
